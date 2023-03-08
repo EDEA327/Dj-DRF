@@ -13,7 +13,7 @@ db.sqlite3-journal
 media
 *.png
 *.jpg
-settings/base.py
+base.py
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
 # <django-project-name>/staticfiles/
@@ -175,5 +175,5 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
-employee/employee/settings/base.py
+
 
