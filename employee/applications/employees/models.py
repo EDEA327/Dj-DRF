@@ -2,11 +2,11 @@ from django.db import models
 from applications.departments.models import Department
 
 # Create your models here.
-class Skills(models.Model):
+class Skill(models.Model):
     """Model that represents the skills of the employees"""
 
     #Atributos
-    skill = models.CharField('Skill', max_length=50)
+    skill_name = models.CharField('Skill', max_length=50)
 
     #Métodos
     def __str__(self):
@@ -18,7 +18,7 @@ class Skills(models.Model):
         (str)
             The name of the skill object
         """
-        return self.skill
+        return self.skill_name
 
 class Employee(models.Model):
     """Employees model"""
