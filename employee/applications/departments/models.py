@@ -9,6 +9,10 @@ class Department(models.Model):
     short_name = models.CharField('Alias', max_length=20, unique=True)
     anulate = models.BooleanField('Anulate', default=False)
 
+    #Meta
+    class Meta:
+        ordering = ('name',)
+
     #Métodos
     def __str__(self):
         """A method to overwrite __str__() and make the admin panel

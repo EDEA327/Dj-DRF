@@ -21,6 +21,10 @@ class Employee(models.Model):
     department = models.ForeignKey(Department, on_delete=models.CASCADE)
     #image = models.ImageField('Image', upload_to=None, height_field=None, width_field=None, max_length=None)
 
+    #Meta
+    class Meta:
+        ordering = ('first_name',)
+
     #Métodos
     def __str__(self):
         """A method to overwrite __str__() and make the admin panel
