@@ -1,5 +1,6 @@
 from django.db import models
 from applications.departments.models import Department
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 class Skill(models.Model):
@@ -39,6 +40,7 @@ class Employee(models.Model):
     department = models.ForeignKey(Department, on_delete=models.CASCADE)
     skills = models.ManyToManyField(Skill)
     avatar = models.ImageField('Avatar-Image', upload_to='avatars', blank=True, null=True)
+    description = RichTextField('Description', blank=True, null=True)
 
     #Meta
     class Meta:

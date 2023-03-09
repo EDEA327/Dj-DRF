@@ -23,4 +23,4 @@ class Department(models.Model):
         _str_
             _The name of Department_
         """
-        return self.name
+        return self.short_name
