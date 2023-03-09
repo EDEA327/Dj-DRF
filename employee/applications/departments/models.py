@@ -6,13 +6,13 @@ class Department(models.Model):
 
     #Atributos
     name = models.CharField('Nombre', max_length=50)
-    short_name = models.CharField('Alias', max_length=20,unique=True)
+    short_name = models.CharField('Alias', max_length=20, unique=True)
     anulate = models.BooleanField('Anulate', default=False)
 
     #Métodos
     def __str__(self):
         """A method to overwrite __str__() and make the admin panel
-        more human readable
+        more human readable.
 
         Returns
         -------
